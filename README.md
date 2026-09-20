@@ -6,7 +6,13 @@ DeskKey is an offline virtual keyboard: a compact 104/105-key PC board with real
 
 DeskKey is freeware.
 
-You may install and use the official APK for free.
+You may download, install, and use the official APK from this repository’s Releases for free.
+
+This project is proprietary. No license is granted to copy, modify, redistribute,
+or create derivative works from the source code or the APK, except as needed to
+install and use the official APK.
+
+Provided as-is, with no warranty.
 
 ## Privacy guarantees
 
