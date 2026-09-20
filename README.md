@@ -4,8 +4,6 @@
 
 DeskKey is an offline virtual keyboard: a compact 104/105-key PC board with real modifiers, on-device dictionaries, clipboard history, and a settings/theme studio. Nothing is fetched from the network. There are no accounts, ads, analytics, or remote word lists.
 
-**Version 1.0.0** · package `in.s2.deskkey` · Android permissions: `VIBRATE`, `RECORD_AUDIO` (dictation), `RECEIVE_BOOT_COMPLETED` (run at startup).
-
 DeskKey is freeware.
 
 You may download, install, and use the official APK from this repository’s Releases for free.
