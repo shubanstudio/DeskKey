@@ -83,7 +83,7 @@ Long-press a letter to open a **small even grid** above the key (equal square ce
 
 ## Overlays (clipboard, emoji, special symbols)
 
-Each overlay covers the key area only. At the bottom: **ABC**, Space, Backspace, Enter — **ABC is the same size** as the other three. ABC returns to the letter keyboard.
+Each overlay covers the key area only. At the bottom: **ABC**, Space, Backspace, Enter. ABC returns to the letter keyboard.
 
 **Special symbols** uses fixed 42×42 keys and **scrolls**. Keys do not shrink to fit.
 
