@@ -211,3 +211,5 @@ JSON v3 backup of **settings + learned words + imported lists + clipboard + emoj
 If this project helped you, you can support it through UPI:
 
 [Donate via UPI](upi://pay?pa=shubanstudio@cnrb)
+
+UPI ID: `shubanstudio@cnrb`
