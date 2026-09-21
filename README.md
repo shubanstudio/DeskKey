@@ -4,6 +4,8 @@
 
 DeskKey is an offline virtual keyboard: a compact 104/105-key PC board with real modifiers, on-device dictionaries, clipboard history, and a settings/theme studio. Nothing is fetched from the network. There are no accounts, ads, analytics, or remote word lists.
 
+![Screenshot](images/screenshot_full_size.png)
+
 DeskKey is freeware.
 
 You may download, install, and use the official APK from this repository’s Releases for free.
@@ -205,10 +207,6 @@ Private mode: suggestions still include words you already learned. DeskKey will 
 ### Backup
 
 JSON v3 backup of **settings + learned words + imported lists + clipboard + emoji recents**. Restore puts all of them back. File name looks like `deskkey-backup-2026-09-13-140500.json`.
-
-## Screenshots
-
-![Screenshot](images/screenshot_full_size.png)
 
 ## Support this project
 
