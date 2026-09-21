@@ -206,6 +206,10 @@ Private mode: suggestions still include words you already learned. DeskKey will 
 
 JSON v3 backup of **settings + learned words + imported lists + clipboard + emoji recents**. Restore puts all of them back. File name looks like `deskkey-backup-2026-09-13-140500.json`.
 
+## Screenshots
+
+![Screenshot](images/screenshot_full_size.png)
+
 ## Support this project
 
 If this project helped you, you can support it through UPI:
