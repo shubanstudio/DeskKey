@@ -184,8 +184,6 @@ IME switcher bar and editing toolbar can be shown or hidden. Floating transparen
 
 ### Layouts & languages
 
-Layout picker (QWERTY, QWERTZ, AZERTY, Dvorak, Colemak) and navigation cluster.
-
 **Show / hide buttons** (all default on): settings, down arrow, undo, redo, Pad/123, Fn, private, floating, clipboard, emoji, one-hand, special symbols. Hidden chips free space; the rest reflow.
 
 One-handed mode is off by default. The **hand** chip (not shown while floating) shrinks the board to half width. The empty side has **< / >** to flip sides and **↔** to drag-resize (42–82%). Side and width are saved.
