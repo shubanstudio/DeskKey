@@ -63,7 +63,7 @@ Ultra still has real **Ctrl / Alt / Shift / Win** combos. Shift still capitalize
 - **Tab**, **Caps**, **Shift**, **Enter** use the same names as Full Size (not icons).
 - Both Shift keys are the **same width**.
 - **Win** shows the text `Win` only — no Windows logo.
-- Bottom-right, between Alt and Ctrl, is **☰**. That is the OS **Menu** key (same idea as Win). On desktop it opens the field’s system context menu (right-click). On Android it sends the Menu key. On iOS there is no Menu key, so the button stays in place and does nothing extra. It is **not** a Cut / Copy / Paste overlay.
+- Bottom-right, between Alt and Ctrl, is **☰**. That is the OS **Menu** key (same idea as Win). On desktop it opens the field’s system context menu (right-click). On Android it sends the Menu key. It is **not** a Cut / Copy / Paste overlay.
 - After **M**: a dual key with **`,`** on the key and **`/`** on top, then a dual key with **`.`** on the key and **`\`** on top.
 - Every letter has a **corner symbol** (photo extras): Q `%` W `~` E `|` R `=` T `[` Y `]` U `<` I `>` O `{` P `}` A `@` S `#` D `$` F `-` G `&` H `-` J `+` K `(` L `)` Z `*` X `"` C `'` V `:` B `;` N `!` M `?`.
 - **More (⌃)** has a tile to switch Full Size ↔ Ultra Compact without leaving the board.
@@ -172,39 +172,94 @@ Recently used glyphs stay on-device (included in backup v3).
 
 ## Settings
 
+Settings is five tabs: **Appearance**, **Layouts**, **Languages**, **Text correction**, **Backup**. Open Settings from the companion app, or from **More (⌃) → Settings** on the keyboard.
+
 ### Appearance
 
-Themes: Midnight, Graphite, Paper, Paper contrast, High contrast, Glass, Ember, Moss, Glacier, Terminal. Paper and Paper contrast are high-legibility light boards. Glass, Glacier, Ember, and Moss stay readable with floating transparency.
+| Control | Range / default | What it does |
+|---|---|---|
+| Follow system light/dark | Off | Midnight in dark mode, Paper in light mode. Turn off to pick a theme in Theme studio. |
+| Key height · portrait | 28–64 px, default **42** | Key row height in portrait. Saved separately from landscape. |
+| Key height · landscape | 28–64 px, default **42** | Key row height in landscape. |
+| Key text size | 11–18 px, default **14** | Letters and legends on keys. |
+| Word suggestion text size | 11–18 px, default **13** | Suggestion chips. |
+| Clipboard text size | 11–18 px, default **12** | Clip cells in the overlay. |
+| Bottom padding | 0–48 px, default **8** | Space under the IME bar. |
+| Side padding | 0–20 px, default **6** | Left/right inset of the board. |
+| Floating transparency | 0–70%, default **0** | See-through keys **only while floating**. |
+| Allow run at startup | Android companion | Opens the system battery-optimization / autostart screen so DeskKey can wake after reboot. On some phones also turn on Autostart for DeskKey. |
 
-**Follow system** matches light/dark to the device theme.
+**Not in Appearance:** keyboard scale, key previews, bevels, key borders, haptic. Bevels and radii live in **Theme studio**.
 
-Key height, scale, bottom/side padding, suggestion text size, clipboard text size, key previews, bevels, and key borders.
+### Layouts
 
-IME switcher bar and editing toolbar can be shown or hidden. Floating transparency lives here.
+**Size** (radio group)
 
-### Layouts & languages
+- **Full Size Keyboard** — full PC board with punctuation keys, two Win keys, and Menu.
+- **Ultra Compact Keyboard** — number row plus letter extras. **Default on phones.** Shift still capitalizes; long-press a letter for its corner symbol. Fn, arrows, Ins, and numpad stay off until you turn them on in More.
 
-**Show / hide buttons** (all default on): settings, down arrow, undo, redo, Pad/123, Fn, private, floating, clipboard, emoji, one-hand, special symbols. Hidden chips free space; the rest reflow.
+**Show / hide buttons**
 
-One-handed mode is off by default. The **hand** chip (not shown while floating) shrinks the board to half width. The empty side has **< / >** to flip sides and **↔** to drag-resize (42–82%). Side and width are saved.
+Hide a button to free space on the IME bar and suggestion strip. Hidden chips reflow. **Pad / 123, Fn, T-arrow, Ins, and Settings always live in More (⌃)** — they are not in this list.
 
-The **#+=** chip opens a punctuation/symbol palette over the keys.
+| Toggle | Default | Where it lives |
+|---|---|---|
+| Down arrow | On | IME bar, left of EN. Hides the keyboard. |
+| Undo | On | IME bar curved-arrow undo. |
+| Redo | On | IME bar curved-arrow redo. |
+| Private mode | On | Mask / glasses on the suggestion bar. Private itself stays **off** until you tap the mask. |
+| Floating keyboard button | On | Untether the board from the suggestion strip. Floating itself stays **off** until you tap it. |
+| Clipboard | On | Clipboard history on the suggestion strip. |
+| Emoji | On | Emoji picker on the suggestion strip. |
+| Microphone | **Off** | Dictate chip on the suggestion strip. Uses the phone’s speech if it has it, in the selected language. |
+| One-hand | On (chip shown) | Half-width keyboard with flip and resize. Hidden while floating. One-hand **mode** is off until you tap the hand. |
+| Special symbols | On | #+= palette of punctuation and symbols. |
 
-Numpad and F-row toggle from **Pad** and **Fn** in the More (⌃) panel. Floating still toggles from the suggestion-strip float button.
+One-handed mode: the **hand** chip shrinks the board to half width. The empty side has **< / >** to flip sides and **↔** to drag-resize (about 42–82%). Side and width are saved. Not applied while floating.
+
+**Export / Import layout JSON**.
+
+### Languages
+
+English is on by default. Turn other languages on to add them to the **EN** button. Tap EN, then pick with the radio list. Letters and suggestions follow that language. If a language has extra letters, a letter chip appears next to EN.
+
+Languages in the list:
+
+Arabic, Assamese, Bengali, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Filipino, Finnish, French, German, Greek, Gujarati, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Kannada, Korean, Malay, Malayalam, Marathi, Nepali, Norwegian, Odia, Persian, Polish, Portuguese, Punjabi, Romanian, Russian, Sanskrit, Serbian, Slovak, Spanish, Swahili, Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Vietnamese.
+
+At least one language must stay on (English is the fallback).
 
 ### Text correction
 
-Suggestions, next-word, **auto-correction**, auto-cap, double-space period, punctuation chips, learn words, **private mode** (default off). Import word lists. Export learned words.
+| Toggle | Default | What it does |
+|---|---|---|
+| Word suggestions | On | Prefix match from two letters. If one or two letters are wrong, the closest dictionary word is shown first. Hidden in password fields. |
+| Next-word suggestions | On | After space, suggest common or learned words. Fully on-device. |
+| Auto-correction | On | On space, replace a misspelled word with the closest on-device match. Off in password, URL, and email fields. |
+| Auto-capitalization | On | After `.` `!` `?` **and a space**, Shift turns on for the next letter. Backspacing a period does not turn Shift on. Tap Shift off to type lowercase. URL, email, password, and number fields stay lowercase. Tapping a suggestion still capitalizes the first word or a word after a period. |
+| Punctuation suggestions |
+| Learn words I type. Disabled in private mode. |
+| Private mode | **Off** | DeskKey does not learn new words. Suggestions still use words you already learned. Toggle from the mask on the left of the suggestion bar. Password fields never learn. |
 
-**Auto-correction** (on by default): on space, replace a misspelled word with the closest on-device match. Off in password, URL, and email fields.
-
-**Auto-capitalization** (on by default): after `.` `!` `?` **and a space**, Shift turns on for the next letter. Backspacing a period does not turn Shift on. Tap Shift off to type lowercase. URL, email, password, and number fields stay lowercase. Tapping a suggestion still capitalizes the first word or a word after a period.
-
-Private mode: suggestions still include words you already learned. DeskKey will not start learning new ones until you turn it off. Password fields never learn.
+Android companion Text correction shows: Word suggestions, Next-word, Auto-correction, Auto-capitalization, Private mode.
 
 ### Backup
 
-JSON v3 backup of **settings + learned words + imported lists + clipboard + emoji recents**. Restore puts all of them back. File name looks like `deskkey-backup-2026-09-13-140500.json`.
+JSON backup of **settings + languages (which are on and which is current) + layout + theme + IME chips + learned words + suggestion extras + clipboard clips + emoji recents**. Restore puts all of them back. Nothing is uploaded.
+
+- **Download backup** / **Restore backup**
+
+---
+
+## Theme studio
+
+Separate page from Settings. Live preview of keycaps and LEDs. Save custom presets on-device. Optional local background image. Bevels, corner radius, and colors are all offline.
+
+Presets: **Midnight**, **Graphite**, **Paper**, **Paper contrast**, **High contrast**, **Glass**, **Ember**, **Moss**, **Glacier**, **Terminal**. Paper and Paper contrast are high-legibility light boards. Glass, Glacier, Ember, and Moss stay readable with floating transparency.
+
+Follow system (Appearance) uses Midnight in dark mode and Paper in light mode. Picking a preset in Theme studio turns Follow system off.
+
+---
 
 ## Support this project
 
