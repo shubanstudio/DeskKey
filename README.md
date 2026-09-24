@@ -155,6 +155,7 @@ Off by default. Turn it on from the float button next to private.
 - Private mode does **not** hide clipboard
 - NUM / CAPS / SCROLL LOCK LEDs are hidden while this overlay is open
 - Clear (Recent tab only) removes unpinned clips
+- **Search** sits on the **left** of the clipboard bar (the query stays in that field). Tap it then a theme-colored keyboard opens **directly under that field**
 
 ---
 
